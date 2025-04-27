@@ -1,0 +1,8 @@
+terminal 1
+
+javac HotelBooking.java HotelServer.java HotelClient.java
+rmiregistry &
+java HotelServer
+
+terminal 2
+java HotelClient
